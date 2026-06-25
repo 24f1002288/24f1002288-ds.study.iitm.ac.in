@@ -1,0 +1,16 @@
+name: Simple Hello World Action
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  say-hello:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 24f1002288@ds.study.iitm.ac.in
+        uses: actions/checkout@v4
+
+      - name: Print a greeting
+        run: echo "Hello, GitHub Actions! A new push was made to the main branch."
